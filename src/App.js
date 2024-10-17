@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './style.css';
+import Result from './Components/Result';
+import Summary from './Components/Summary';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className='min-h-screen h-full flex justify-center items-center '>
+      <div className='flex flex-col md:flex-row justify-center shadow-2xl rounded-2xl' style={{ fontFamily: "Hanken-Medium" }}>
+        <Result />
+        <Summary />
+      </div>
+    </section>
   );
 }
 
